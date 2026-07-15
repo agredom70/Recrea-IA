@@ -1,0 +1,6 @@
+{
+  "name": "Chef IA ReCrea",
+  "description": "Tu asistente de cocina personal para volver a disfrutar de panes, pizzas y postres sin gluten ni azúcar, sin culpas ni limitaciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
