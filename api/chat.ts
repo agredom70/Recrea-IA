@@ -1,5 +1,4 @@
 import { GoogleGenAI } from "@google/genai";
-import { RECIPES_DATA } from "../src/data/recipes";
 
 // Lazy-loaded Gemini Client
 let aiClient: GoogleGenAI | null = null;
@@ -147,10 +146,44 @@ export default async function handler(req: any, res: any) {
 
     const ai = getAIClient(apiKey);
 
-    // List of catalog recipes for REGLA 1
-    const panesNames = RECIPES_DATA.panes.map(r => r.name);
-    const basesNames = RECIPES_DATA.bases.map(r => r.name);
-    const postresNames = RECIPES_DATA.postres.map(r => r.name);
+    // List of catalog recipes for REGLA 1 (hardcoded to guarantee Vercel Serverless reliability and prevent ERR_MODULE_NOT_FOUND)
+    const panesNames = [
+      "1. Pan de Molde Clasico",
+      "2. Pan para Hamburguesa",
+      "3. Pan para Hot Dog",
+      "4. Bagels",
+      "5. Pan de Avena y Yogur",
+      "6. Pan Integral de Almendras",
+      "7. Pan de Romero y Ajo",
+      "8. Pan Alto en Proteina",
+      "9. Pan Rustico de Semillas",
+      "10. Pan Multisemillas"
+    ];
+
+    const basesNames = [
+      "1. Base de Pizza Clasica",
+      "2. Focaccia sin Gluten (con Calabaza)",
+      "3. Base de Pizza de Coliflor",
+      "4. Masa de Empanadas",
+      "5. Base de Tarta (Masa Quebrada)",
+      "6. Quiche de Espinaca y Queso",
+      "7. Palitos de Pan (Breadsticks)",
+      "8. Tortillas de Harina"
+    ];
+
+    const postresNames = [
+      "1. Brownies sin Azucar",
+      "2. Galletas con Chispas de Chocolate",
+      "3. Muffins de Almendra y Yogur",
+      "4. Torta de Zanahoria",
+      "5. Cheesecake Horneado",
+      "6. Flan Casero",
+      "7. Tarta de Limon",
+      "8. Pan de Platano (Banana Bread)",
+      "9. Crumble de Manzana",
+      "10. Mousse de Chocolate",
+      "11. “Helado” de Yogur Griego"
+    ];
     
     const catalogSummaryText = `
 - PANES (10 recetas):
