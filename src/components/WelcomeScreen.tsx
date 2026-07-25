@@ -11,7 +11,7 @@ const sampleRecipes = [
     name: "Pan de Molde Clásico",
     fullName: "1. Pan de Molde Clasico",
     description: "Miga suave y corteza fina, perfecta para tostadas y sándwiches cotidianos sin gluten.",
-    image: "/src/assets/images/pan_de_molde_1785004126532.jpg",
+    image: "/images/pan_de_molde_1785004126532.jpg",
     icon: Croissant,
     category: "Panes"
   },
