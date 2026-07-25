@@ -302,9 +302,20 @@ export default function Catalog({
                   )}
                 </div>
 
-
-
-                {/* Name and introduction */}
+                {/* Image Thumbnail */}
+                {recipe.image && (
+                  <div className="relative w-full h-32 rounded-xl overflow-hidden border border-brand-border/30">
+                    <img 
+                      src={recipe.image} 
+                      alt={recipe.name} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute bottom-1.5 right-1.5 bg-black/75 backdrop-blur-sm text-[8px] text-brand-gray px-1.5 py-0.5 rounded font-sans border border-brand-border/25">
+                      Imagen de referencia
+                    </div>
+                  </div>
+                )}                {/* Name and introduction */}
                 <div className="space-y-1.5">
                   <h3 className="text-base font-bold text-brand-white group-hover:text-brand-neon-light transition-colors leading-snug">
                     {recipe.name}
