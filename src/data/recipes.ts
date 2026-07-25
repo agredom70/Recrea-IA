@@ -11,6 +11,7 @@ export interface Recipe {
   airfryer: string;
   chef_ai: string[];
   sugar_note?: string;
+  image?: string;
 }
 
 export interface RecipesData {
@@ -73,7 +74,8 @@ export const RECIPES_DATA: RecipesData = {
         "Puedo sustituir la harina de quinoa por otra?",
         "No tengo almidon de patata, que uso?",
         "Como se si mi levadura sigue activa?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_de_molde_1785004126532.jpg"
     },
     {
       "name": "2. Pan para Hamburguesa",
@@ -132,7 +134,8 @@ export const RECIPES_DATA: RecipesData = {
         "No tengo patata, puedo omitirla?",
         "Como hago una version vegana sin huevo?",
         "Por que mi masa quedo muy liquida?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_hamburguesa_1785004141772.jpg"
     },
     {
       "name": "3. Pan para Hot Dog",
@@ -184,7 +187,8 @@ export const RECIPES_DATA: RecipesData = {
         "Puedo hacerlos mas finos, estilo argentino?",
         "No tengo goma xantana, que hago?",
         "Como evito que se aplanen?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_hot_dog_1785004154149.jpg"
     },
     {
       "name": "4. Bagels",
@@ -250,7 +254,8 @@ export const RECIPES_DATA: RecipesData = {
         "Puedo hacerlos dulces con canela?",
         "Por que se cerro el agujero al hornear?",
         "No tengo harina de sorgo, con que la sustituyo?"
-      ]
+      ],
+      "image": "/src/assets/images/bagels_1785004177407.jpg"
     },
     {
       "name": "5. Pan de Avena y Yogur",
@@ -299,7 +304,8 @@ export const RECIPES_DATA: RecipesData = {
         "No tengo yogur griego, que puedo usar?",
         "Como lo hago mas esponjoso?",
         "Puedo hacerlo vegano?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_avena_yogur_1785004189905.jpg"
     },
     {
       "name": "6. Pan Integral de Almendras",
@@ -347,7 +353,8 @@ export const RECIPES_DATA: RecipesData = {
         "Puedo bajarle la cantidad de huevos?",
         "Quiero una version mas baja en grasa.",
         "Con que lo acompano mejor?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_almendras_1785004202327.jpg"
     },
     {
       "name": "7. Pan de Romero y Ajo",
@@ -404,7 +411,8 @@ export const RECIPES_DATA: RecipesData = {
         "Como lo hago mas suave de ajo?",
         "Puedo agregarle queso?",
         "Con que platos combina mejor?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_romero_ajo_1785005141337.jpg"
     },
     {
       "name": "8. Pan Alto en Proteina",
@@ -462,7 +470,8 @@ export const RECIPES_DATA: RecipesData = {
         "Que tipo de proteina en polvo funciona mejor?",
         "Mi pan quedo muy seco, que cambio?",
         "Cuanta proteina aporta cada rebanada?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_alto_proteina_1785005153132.jpg"
     },
     {
       "name": "9. Pan Rustico de Semillas",
@@ -524,7 +533,8 @@ export const RECIPES_DATA: RecipesData = {
         "Que otras semillas puedo usar?",
         "Por que se agrieto de forma irregular?",
         "Como logro una corteza mas crujiente?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_rustico_semillas_1785005162609.jpg"
     },
     {
       "name": "10. Pan Multisemillas",
@@ -584,7 +594,8 @@ export const RECIPES_DATA: RecipesData = {
         "Que otras semillas puedo integrar?",
         "Como evito que se hundan al fondo?",
         "Aporta mas fibra que el pan de molde clasico?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_multisemillas_1785005171790.jpg"
     },
     {
       "name": "11. Pan Keto Individual de Queso Parmesano",
@@ -626,9 +637,10 @@ export const RECIPES_DATA: RecipesData = {
       "airfryer": "Se puede preparar en air fryer horneando a 160°C por 10-12 minutos en un molde individual apto.",
       "chef_ai": [
         "¿Puedo sustituir la harina de coco por harina de almendras?",
-        "¿Que puedo usar en lugar de crema de leche?",
+        "¿Que puedo usar in lugar de crema de leche?",
         "¿Por que quedo muy seco?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_keto_parmesano_1785005180893.jpg"
     },
     {
       "name": "12. Pan Keto Alto en Proteina",
@@ -673,7 +685,8 @@ export const RECIPES_DATA: RecipesData = {
         "¿Que tipo de proteina whey sin sabor recomiendas?",
         "¿Puedo omitir la mozzarella?",
         "¿Por que quedo muy humedo en el centro?"
-      ]
+      ],
+      "image": "/src/assets/images/pan_keto_proteina_1785005190693.jpg"
     }
   ],
   "bases": [

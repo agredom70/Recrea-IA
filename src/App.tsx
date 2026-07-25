@@ -49,15 +49,31 @@ export default function App() {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Save onboarding state in localStorage
-  const handleOnboardingComplete = (name: string) => {
-    setUserName(name);
+  const handleOnboardingComplete = (name: string, selectRecipeName?: string) => {
+    const finalName = name || "Invitado";
+    setUserName(finalName);
     setIsOnboarded(true);
-    localStorage.setItem("chef_ia_user_name", name);
+    localStorage.setItem("chef_ia_user_name", finalName);
     localStorage.setItem("chef_ia_onboarded", "true");
 
+    if (selectRecipeName) {
+      let found: Recipe | null = null;
+      for (const cat of Object.keys(RECIPES_DATA) as (keyof typeof RECIPES_DATA)[]) {
+        const match = RECIPES_DATA[cat].find(r => r.name.toLowerCase() === selectRecipeName.toLowerCase());
+        if (match) {
+          found = match;
+          break;
+        }
+      }
+      if (found) {
+        setSelectedRecipe(found);
+        setActiveTab("catalog");
+      }
+    }
+
     // Display welcome micro-toast
-    const message = name 
-      ? `¡Listo, ${name}! Vamos a preparar algo juntos.` 
+    const message = finalName 
+      ? `¡Listo, ${finalName}! Vamos a preparar algo juntos.` 
       : "¡Listo! Vamos a preparar algo juntos.";
     setToastMessage(message);
     setTimeout(() => {

@@ -202,6 +202,19 @@ export default function RecipeDetail({ recipe, onBack, onAskChef, onTroubleshoot
         
         {/* Ingredients Column */}
         <div className="lg:col-span-5 space-y-6">
+          {recipe.image && (
+            <div className="relative w-full h-64 rounded-[24px] overflow-hidden border border-brand-border/40 shadow-lg group">
+              <img 
+                src={recipe.image} 
+                alt={recipe.name} 
+                className="w-full h-full object-cover hover:scale-102 transition-transform duration-500" 
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-sm text-[10px] text-brand-gray/95 px-2.5 py-1 rounded-md font-sans border border-brand-border/30">
+                Imagen de referencia
+              </div>
+            </div>
+          )}
           <div className="bg-black/40 border border-brand-border p-6 rounded-[24px] space-y-6">
             <h3 className="text-lg font-bold text-brand-white tracking-tight flex items-center gap-2">
               <span className="w-1.5 h-4 bg-brand-neon rounded-full" />
