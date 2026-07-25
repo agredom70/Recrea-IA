@@ -6,7 +6,7 @@
       "destination": "/api/chat"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api|images|assets|[^/]*\\.[^/]*$).*)",
       "destination": "/index.html"
     }
   ]
