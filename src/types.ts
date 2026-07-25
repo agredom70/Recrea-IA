@@ -10,6 +10,7 @@ export interface Recipe {
   storage: string;
   airfryer: string;
   chef_ai: string[];
+  sugar_note?: string;
 }
 
 export interface RecipesData {

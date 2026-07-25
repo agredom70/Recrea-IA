@@ -272,6 +272,12 @@ export default function RecipeDetail({ recipe, onBack, onAskChef, onTroubleshoot
                 </ul>
               </div>
             ))}
+
+            {recipe.sugar_note && (
+              <div className="pt-4 border-t border-brand-border/20 text-xs text-brand-neon-light bg-brand-dark/20 p-3.5 rounded-xl border border-brand-neon/20 leading-relaxed font-sans">
+                {recipe.sugar_note}
+              </div>
+            )}
           </div>
 
           {/* Conservation Info */}

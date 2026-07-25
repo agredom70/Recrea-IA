@@ -10,6 +10,7 @@ export interface Recipe {
   storage: string;
   airfryer: string;
   chef_ai: string[];
+  sugar_note?: string;
 }
 
 export interface RecipesData {
@@ -584,6 +585,95 @@ export const RECIPES_DATA: RecipesData = {
         "Como evito que se hundan al fondo?",
         "Aporta mas fibra que el pan de molde clasico?"
       ]
+    },
+    {
+      "name": "11. Pan Keto Individual de Queso Parmesano",
+      "source": "Receta Cetogenica",
+      "intro": "Un pan individual rapido, de textura aireada y delicioso aroma a queso parmesano tostado. Es ideal para acompañar tus comidas sin salirte de la cetosis.",
+      "info": [
+        "Prep 5 min",
+        "Reposo 3 min",
+        "Horneado 15-18 min",
+        "Rinde 1 porcion",
+        "Macros: Fat 29g, Proteina 15g, Carbs netos 5g, 379 kcal"
+      ],
+      "ingredients": [
+        [
+          "Ingredientes",
+          [
+            "1 cda mantequilla derretida",
+            "2 cdas harina de coco",
+            "1/4 cdta polvo de hornear",
+            "1 huevo",
+            "1 cda crema de leche",
+            "2 cdas agua",
+            "1/4 taza queso parmesano rallado",
+            "sal y pimienta al gusto"
+          ]
+        ]
+      ],
+      "steps": [
+        "Precalienta el horno a 180°C. Engrasa un molde individual.",
+        "Bate el huevo con la mantequilla derretida, la crema de leche y el agua hasta integrar.",
+        "Agrega la harina de coco, el polvo de hornear, sal y condimentos. Deja reposar 2-3 minutos para que la harina de coco absorba el liquido.",
+        "Incorpora el queso parmesano.",
+        "Vierte en el molde y hornea 15-18 minutos, hasta que este firme y dorado.",
+        "Deja enfriar 5 minutos antes de desmoldar."
+      ],
+      "tip": "Deja reposar la masa los minutos indicados: la harina de coco requiere tiempo para absorber la humedad y dar la consistencia correcta.",
+      "personalize": "Anade una pizca de ajo en polvo, oregano seco o paprika para darle un toque italiano adicional.",
+      "storage": "Consumir en el dia preferentemente. Puedes guardarlo tapado hasta por 24 horas en refrigeracion.",
+      "airfryer": "Se puede preparar en air fryer horneando a 160°C por 10-12 minutos en un molde individual apto.",
+      "chef_ai": [
+        "¿Puedo sustituir la harina de coco por harina de almendras?",
+        "¿Que puedo usar en lugar de crema de leche?",
+        "¿Por que quedo muy seco?"
+      ]
+    },
+    {
+      "name": "12. Pan Keto Alto en Proteina",
+      "source": "Receta Cetogenica",
+      "intro": "Un pan keto denso, sumamente saciante y con excelente estructura gracias a la mozzarella derretida y la proteina whey. Perfecto para sandwiches densos o tostadas.",
+      "info": [
+        "Prep 20 min",
+        "Horneado 35-40 min",
+        "Rinde 16 porciones",
+        "Macros por porcion: Fat 15g, Proteina 13.5g, Carbs netos 2.5g, 200 kcal"
+      ],
+      "ingredients": [
+        [
+          "Ingredientes",
+          [
+            "3 tazas queso mozzarella rallado (300g)",
+            "4 oz queso crema (112g)",
+            "2 huevos",
+            "2 tazas harina de almendra (200g)",
+            "1/2 taza proteina whey sin sabor (32g)",
+            "1/4 taza yogurt griego (60g)",
+            "1 cda polvo de hornear (12g)",
+            "1/2 cdta sal (2g)"
+          ]
+        ]
+      ],
+      "steps": [
+        "Precalienta el horno a 175°C. Forra un molde de pan.",
+        "Derrite el queso mozzarella y el queso crema juntos hasta integrar por completo.",
+        "Mezcla en un bowl aparte la harina de almendra, la proteina whey, el polvo de hornear y la sal.",
+        "Agrega los huevos y el yogurt griego a la mezcla de queso derretido, integrando rapido.",
+        "Incorpora los secos a la mezcla humeda hasta formar una masa uniforme (puede quedar pegajosa, es normal).",
+        "Coloca en el molde, alisa la superficie.",
+        "Hornea 35-40 minutos hasta dorar y firmar.",
+        "Enfria completamente sobre rejilla antes de cortar."
+      ],
+      "tip": "Para derretir los quesos puedes usar microondas en intervalos de 30 segundos, mezclando en cada pausa, o a bano Maria.",
+      "personalize": "Espolvorea semillas de sesamo o amapola en la parte superior antes de hornear para darle un toque crujiente.",
+      "storage": "Guarda en el refrigerador hasta por 5 dias en un recipiente hermetico, o rebana y congela por 2 meses.",
+      "airfryer": "Se puede hornear a 160°C en molde pequeno cubriendo con aluminio si se dora demasiado rapido.",
+      "chef_ai": [
+        "¿Que tipo de proteina whey sin sabor recomiendas?",
+        "¿Puedo omitir la mozzarella?",
+        "¿Por que quedo muy humedo en el centro?"
+      ]
     }
   ],
   "bases": [
@@ -1029,7 +1119,8 @@ export const RECIPES_DATA: RecipesData = {
         "Puedo hacerlos sin mantequilla?",
         "Como los hago mas fudgy?",
         "No tengo alulosa, que uso?"
-      ]
+      ],
+      "sugar_note": "La alulosa granulada usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "2. Galletas con Chispas de Chocolate",
@@ -1077,14 +1168,15 @@ export const RECIPES_DATA: RecipesData = {
         "Enfria 5 min sobre la bandeja antes de mover."
       ],
       "tip": "La harina de almendra dora mas rapido que la de trigo -- revisa desde el minuto 9.",
-      "personalize": "Arandanos secos sin azucar y ralladura de naranja.",
+      "personalize": "Arandanos secos sin azucar and ralladura de naranja.",
       "storage": "Temp. ambiente 1 semana. Congelacion 2 meses (masa cruda u horneadas).",
       "airfryer": "Precalienta la air fryer a 160°C durante 3-4 minutos antes de introducir la preparación -- saltarte el precalentamiento es la causa más común de que un air fryer no cocine parejo. Usa moldes individuales o un molde pequeño apto para air fryer -- el espacio de cocción es menor que en un horno, así que no repliques el molde grande de la versión al horno. Cocina a 160°C durante 8-10 min, revisando desde el primer tercio del tiempo -- el calor directo del air fryer suele acelerar el dorado de la superficie. Verifica el punto de cocción con un palillo en el centro: debe salir limpio (o con humedad controlada, según lo que indique la receta específica).",
       "chef_ai": [
         "Por que se me desarman al levantarlas?",
         "Puedo usar mantequilla de mani?",
         "Quiero una version vegana"
-      ]
+      ],
+      "sugar_note": "La alulosa granulada usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "3. Muffins de Almendra y Yogur",
@@ -1132,7 +1224,8 @@ export const RECIPES_DATA: RecipesData = {
         "Puedo hacerlos sin lacteos?",
         "Como evito que se hundan?",
         "Quiero una version de chocolate"
-      ]
+      ],
+      "sugar_note": "La alulosa granulada usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "4. Torta de Zanahoria",
@@ -1190,7 +1283,8 @@ export const RECIPES_DATA: RecipesData = {
       "chef_ai": [
         "Como hago el glaseado sin azucar?",
         "Puedo usar calabacin en vez de zanahoria?"
-      ]
+      ],
+      "sugar_note": "La alulosa granulada usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "5. Cheesecake Horneado",
@@ -1242,7 +1336,8 @@ export const RECIPES_DATA: RecipesData = {
         "Se me agrieto, que hice mal?",
         "Puedo hacerlo sin horno?",
         "Como lo hago de chocolate?"
-      ]
+      ],
+      "sugar_note": "La alulosa usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "6. Flan Casero",
@@ -1291,7 +1386,8 @@ export const RECIPES_DATA: RecipesData = {
         "Se me cristalizo el caramelo, que hago?",
         "Puedo hacerlo sin lacteos?",
         "Como evito que tenga burbujas?"
-      ]
+      ],
+      "sugar_note": "La alulosa usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "7. Tarta de Limon",
@@ -1343,7 +1439,8 @@ export const RECIPES_DATA: RecipesData = {
         "Como hago el merengue para decorarla?",
         "Puedo usar lima en vez de limon?",
         "Me quedo muy liquida, que ajusto?"
-      ]
+      ],
+      "sugar_note": "La alulosa usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "8. Pan de Platano (Banana Bread)",
@@ -1399,7 +1496,8 @@ export const RECIPES_DATA: RecipesData = {
       "chef_ai": [
         "Puedo usar platano congelado?",
         "Como lo hago mas denso, tipo bizcocho?"
-      ]
+      ],
+      "sugar_note": "La alulosa granulada usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "9. Crumble de Manzana",
@@ -1449,7 +1547,8 @@ export const RECIPES_DATA: RecipesData = {
       "chef_ai": [
         "Puedo usar durazno en vez de manzana?",
         "Me quedo muy liquido, que hago diferente?"
-      ]
+      ],
+      "sugar_note": "La alulosa usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "10. Mousse de Chocolate",
@@ -1489,7 +1588,8 @@ export const RECIPES_DATA: RecipesData = {
         "Se me corto la mezcla, que paso?",
         "Puedo hacerlo sin lacteos?",
         "Como lo hago mas intenso de chocolate?"
-      ]
+      ],
+      "sugar_note": "La alulosa pulverizada usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     },
     {
       "name": "11. “Helado” de Yogur Griego",
@@ -1535,7 +1635,8 @@ export const RECIPES_DATA: RecipesData = {
         "Como lo hago de chocolate?",
         "Que frutas funcionan mejor?",
         "Puedo hacerlo sin crema para batir?"
-      ]
+      ],
+      "sugar_note": "La alulosa pulverizada usada aquí es opcional — puedes sustituirla por azúcar regular en la misma cantidad si lo prefieres. Ambas opciones funcionan bien en esta receta."
     }
   ]
 };

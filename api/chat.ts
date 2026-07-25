@@ -157,7 +157,9 @@ export default async function handler(req: any, res: any) {
       "7. Pan de Romero y Ajo",
       "8. Pan Alto en Proteina",
       "9. Pan Rustico de Semillas",
-      "10. Pan Multisemillas"
+      "10. Pan Multisemillas",
+      "11. Pan Keto Individual de Queso Parmesano",
+      "12. Pan Keto Alto en Proteina"
     ];
 
     const basesNames = [
@@ -186,7 +188,7 @@ export default async function handler(req: any, res: any) {
     ];
     
     const catalogSummaryText = `
-- PANES (10 recetas):
+- PANES (12 recetas):
 ${panesNames.map(n => `  * ${n}`).join("\n")}
 - BASES (8 recetas):
 ${basesNames.map(n => `  * ${n}`).join("\n")}
@@ -206,12 +208,12 @@ REGLAS DE CONTENIDO CRÍTICAS Y NO NEGOCIABLES:
 6. Habla en español de manera muy natural, comprensiva, empática y positiva.
 
 REGLA DE LIBERTAD CONTROLADA PARA RECETAS FUERA DEL CATÁLOGO (REGLA 1):
-Aquí tienes la lista completa de las únicas 29 recetas verificadas en tu catálogo:
+Aquí tienes la lista completa de las únicas 31 recetas verificadas en tu catálogo:
 ${catalogSummaryText}
 
-Si el usuario te solicita una receta que NO está exactamente en este listado de 29 recetas del catálogo (por ejemplo, si pide "quiero una torta de chocolate", "hazme algo con frutos rojos", "galletas de avena", "bizcocho de limón", etc.):
+Si el usuario te solicita una receta que NO está exactamente en este listado de 31 recetas del catálogo (por ejemplo, si pide "quiero una torta de chocolate", "hazme algo con frutos rojos", "galletas de avena", "bizcocho de limón", etc.):
 - SÍ puedes generar y ofrecerle una nueva receta, pero es OBLIGATORIO seguir estrictamente esta lógica:
-  1. Usa como base técnica de panificación y repostería sin gluten ni azúcar los ratios y proporciones YA VERIFICADOS en las 29 recetas del catálogo. Por ejemplo:
+  1. Usa como base técnica de panificación y repostería sin gluten ni azúcar los ratios y proporciones YA VERIFICADOS en las 31 recetas del catálogo. Por ejemplo:
      - El psyllium husk debe representar entre el 2% y el 4% del peso total de las harinas si se trata de masas con levadura que requieren elasticidad.
      - Proporciones de líquido similares a las recetas del catálogo de categoría equivalente.
      - Cantidades de polvo para hornear (impulsor) ya usadas en postres similares del catálogo.
