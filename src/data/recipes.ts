@@ -75,7 +75,7 @@ export const RECIPES_DATA: RecipesData = {
         "No tengo almidon de patata, que uso?",
         "Como se si mi levadura sigue activa?"
       ],
-      "image": "/images/pan_de_molde_1785004126532.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032302/pan_de_molde_1785004126532.jpg_pauott.jpg"
     },
     {
       "name": "2. Pan para Hamburguesa",
@@ -135,7 +135,7 @@ export const RECIPES_DATA: RecipesData = {
         "Como hago una version vegana sin huevo?",
         "Por que mi masa quedo muy liquida?"
       ],
-      "image": "/images/pan_hamburguesa_1785004141772.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032302/pan_hamburguesa_1785004141772.jpg_czxoef.jpg"
     },
     {
       "name": "3. Pan para Hot Dog",
@@ -188,7 +188,7 @@ export const RECIPES_DATA: RecipesData = {
         "No tengo goma xantana, que hago?",
         "Como evito que se aplanen?"
       ],
-      "image": "/images/pan_hot_dog_1785004154149.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032301/pan_hot_dog_1785004154149.jpg_etlum2.jpg"
     },
     {
       "name": "4. Bagels",
@@ -255,7 +255,7 @@ export const RECIPES_DATA: RecipesData = {
         "Por que se cerro el agujero al hornear?",
         "No tengo harina de sorgo, con que la sustituyo?"
       ],
-      "image": "/images/bagels_1785004177407.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032301/bagels_1785004177407.jpg_wdtxst.jpg"
     },
     {
       "name": "5. Pan de Avena y Yogur",
@@ -305,7 +305,7 @@ export const RECIPES_DATA: RecipesData = {
         "Como lo hago mas esponjoso?",
         "Puedo hacerlo vegano?"
       ],
-      "image": "/images/pan_avena_yogur_1785004189905.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032301/pan_avena_yogur_1785004189905.jpg_bzfpal.jpg"
     },
     {
       "name": "6. Pan Integral de Almendras",
@@ -354,7 +354,7 @@ export const RECIPES_DATA: RecipesData = {
         "Quiero una version mas baja en grasa.",
         "Con que lo acompano mejor?"
       ],
-      "image": "/images/pan_almendras_1785004202327.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032301/pan_almendras_1785004202327.jpg_vmfztt.jpg"
     },
     {
       "name": "7. Pan de Romero y Ajo",
@@ -412,7 +412,7 @@ export const RECIPES_DATA: RecipesData = {
         "Puedo agregarle queso?",
         "Con que platos combina mejor?"
       ],
-      "image": "/images/pan_romero_ajo_1785005141337.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032252/pan_romero_ajo_1785005141337.jpg_sta85l.jpg"
     },
     {
       "name": "8. Pan Alto en Proteina",
@@ -471,7 +471,7 @@ export const RECIPES_DATA: RecipesData = {
         "Mi pan quedo muy seco, que cambio?",
         "Cuanta proteina aporta cada rebanada?"
       ],
-      "image": "/images/pan_alto_proteina_1785005153132.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032301/pan_alto_proteina_1785005153132.jpg_ij0q0j.jpg"
     },
     {
       "name": "9. Pan Rustico de Semillas",
@@ -534,7 +534,7 @@ export const RECIPES_DATA: RecipesData = {
         "Por que se agrieto de forma irregular?",
         "Como logro una corteza mas crujiente?"
       ],
-      "image": "/images/pan_rustico_semillas_1785005162609.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032300/pan_rustico_semillas_1785005162609.jpg_o2thn7.jpg"
     },
     {
       "name": "10. Pan Multisemillas",
@@ -595,7 +595,7 @@ export const RECIPES_DATA: RecipesData = {
         "Como evito que se hundan al fondo?",
         "Aporta mas fibra que el pan de molde clasico?"
       ],
-      "image": "/images/pan_multisemillas_1785005171790.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032252/pan_multisemillas_1785005171790.jpg_jbjjwx.jpg"
     },
     {
       "name": "11. Pan Keto Individual de Queso Parmesano",
@@ -640,7 +640,7 @@ export const RECIPES_DATA: RecipesData = {
         "¿Que puedo usar in lugar de crema de leche?",
         "¿Por que quedo muy seco?"
       ],
-      "image": "/images/pan_keto_parmesano_1785005180893.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032300/pan_keto_parmesano_1785005180893.jpg_dgs8yg.jpg"
     },
     {
       "name": "12. Pan Keto Alto en Proteina",
@@ -686,7 +686,7 @@ export const RECIPES_DATA: RecipesData = {
         "¿Puedo omitir la mozzarella?",
         "¿Por que quedo muy humedo en el centro?"
       ],
-      "image": "/images/pan_keto_proteina_1785005190693.jpg"
+      "image": "https://res.cloudinary.com/omai5eeg/image/upload/v1785032300/pan_keto_proteina_1785005190693.jpg_gi7sx7.jpg"
     }
   ],
   "bases": [
